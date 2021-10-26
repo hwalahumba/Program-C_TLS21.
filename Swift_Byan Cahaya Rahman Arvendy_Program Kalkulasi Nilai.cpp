@@ -2,8 +2,8 @@
 using namespace std;
 
 int main(){
-     int n_tugas, nilai_tugas, sum_tugas, avr_tugas;
-     cout<<endl<<"Masukkan jumlah penugasan yang diberikan: ";
+     float n_tugas, nilai_tugas, sum_tugas, avr_tugas;
+     cout<<"Masukkan jumlah penugasan yang diberikan: ";
      cin>>n_tugas;
           for(int i=0; i<n_tugas; i++){
                cout<<"Masukkan nilai penugasan yang diberikan : ";
@@ -12,7 +12,7 @@ int main(){
      sum_tugas=sum_tugas+nilai_tugas;
      avr_tugas=sum_tugas/n_tugas;
 
-     int n_kuis, nilai_kuis, sum_kuis, avr_kuis;
+     float n_kuis, nilai_kuis, sum_kuis, avr_kuis;
      cout<<endl<<"Masukkan jumlah penugasan yang diberikan: ";
      cin>>n_kuis;
           for(int i=0; i<n_kuis; i++){
@@ -22,18 +22,18 @@ int main(){
      sum_kuis=sum_kuis+nilai_kuis;
      avr_kuis=sum_kuis/n_kuis;
 
-     int nilai_UTS, nilai_UAS;
+     float nilai_UTS, nilai_UAS;
      cout<<endl<<"Masukkan nilai UTS mahasiswa: ";
      cin>>nilai_UTS;
      cout<<"Masukkan nilai UAS mahasiswa: ";
      cin>>nilai_UAS;
 
-     int Tugas_Kuis, UTS_UAS, total_nilai;
+     float Tugas_Kuis, UTS_UAS, total_nilai;
      Tugas_Kuis=(avr_kuis+avr_tugas)/2*0.4;
      cout<<Tugas_Kuis;
      UTS_UAS=(nilai_UTS+nilai_UAS)/2*0.6;
      cout<<endl<<UTS_UAS;
-     total_nilai=(Tugas_Kuis+UTS_UAS)/2;
+     total_nilai=(Tugas_Kuis+UTS_UAS);
 
      cout<<endl<<endl<<"==KALKULASI NILAI MAHASISWA==";
      cout<<endl<<"Total nilai Tugas: "<<avr_tugas;
